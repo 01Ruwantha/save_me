@@ -12,7 +12,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp.router(
       debugShowCheckedModeBanner: false,
-      title: 'කාමරේ',
+      title: 'SaveMe',
       routerConfig: router, // ✅ Use GoRouter here
     );
   }
