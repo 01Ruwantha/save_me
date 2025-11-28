@@ -26,7 +26,11 @@ class _CustomBottomNavScaffoldState extends State<CustomBottomNavScaffold> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: AppColorStyle.backgroundPrimary,
-      body: IndexedStack(index: _selectedIndex, children: _pages),
+      body: IndexedStack(
+        index: _selectedIndex,
+        children: _pages,
+        sizing: StackFit.expand,
+      ),
       bottomNavigationBar: Container(
         color: AppColorStyle.backgroundPrimary,
         padding: const EdgeInsets.symmetric(vertical: 10),
